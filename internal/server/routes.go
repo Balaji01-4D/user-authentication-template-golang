@@ -1,6 +1,7 @@
 package server
 
 import (
+	"go-auth-template/internal/user"
 	"net/http"
 
 	"github.com/gin-contrib/cors"
@@ -20,6 +21,8 @@ func (s *Server) RegisterRoutes() http.Handler {
 	r.GET("/", s.HelloWorldHandler)
 
 	r.GET("/health", s.healthHandler)
+
+	user.RegisterRoutes(r, s.db.GetDB())
 
 	return r
 }
