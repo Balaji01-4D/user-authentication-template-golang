@@ -203,3 +203,16 @@ Notable tests:
 - CORS is configured with `AllowCredentials: true` and `AllowOrigins: ["http://localhost:5173"]`. Update this for your frontend.
 - Graceful shutdown is implemented in `cmd/api/main.go` and handles SIGINT/SIGTERM with a 5s drain period.
 
+
+## Contributing
+
+Contributions are welcome. See `CONTRIBUTING.md` for how to get started, coding standards, and the PR process.
+
+## Security
+
+If you discover a vulnerability, please follow the guidance in `SECURITY.md` and do not open a public issue.
+
+## License
+
+MIT. See `LICENSE` for details.
+
